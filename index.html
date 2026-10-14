@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers at Nexora · HireFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="careers">
+
+<nav class="site-nav">
+    <a class="logo" href="index.html"><span class="logo-mark">N</span> Nexora Careers</a>
+    <a class="btn btn-ghost btn-sm" href="login.html">Recruiter login →</a>
+</nav>
+
+<header class="hero">
+    <div>
+        <span class="eyebrow">We're hiring · 2026</span>
+        <h1>Do the best work of your <em>career</em> with us.</h1>
+        <p>Nexora builds software used by 40,000+ businesses across India. Find a role that fits you, apply in two minutes and track your application with a reference number.</p>
+    </div>
+    <div class="hero-stats">
+        <div><b id="statRoles">–</b><span>Open roles</span></div>
+        <div><b id="statDepts">–</b><span>Teams hiring</span></div>
+        <div><b>48h</b><span>Avg. first reply</span></div>
+    </div>
+</header>
+
+<main class="jobs-section">
+    <div class="jobs-toolbar">
+        <div class="filter-chips" id="deptFilters"></div>
+        <input class="input" id="jobSearch" type="search" placeholder="Search roles, skills or city…">
+    </div>
+    <div class="job-list" id="jobList"><p class="empty">Loading open roles…</p></div>
+</main>
+
+<footer class="site-footer">
+    © 2026 Nexora Technologies · Applicant tracking powered by <b>HireFlow</b>
+</footer>
+
+<!-- Job detail + application form (filled in by app.js) -->
+<div class="modal-backdrop hidden" id="jobModal">
+    <div class="modal" role="dialog" aria-modal="true">
+        <button class="modal-close" data-close aria-label="Close">×</button>
+        <div id="jobModalBody"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
